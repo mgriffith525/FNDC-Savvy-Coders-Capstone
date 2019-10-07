@@ -8,247 +8,44 @@
   --backgroud-color: #009280;
 }
 
-
-nav {
-  min-height: 72px;
-  border-bottom: 1px solid black;
+.search-box{
+  Position: absolute;
+  Top: 50%;
+  Left: 50%;
+  Height: 40px;
+  Border-radius: 40px;
+  Padding: 10px;
 }
 
-
-
-.nav ul {
-  list-style-type: none;
-  padding-left: 0;
+.search-box:hover > .search-txt{
+  width: 204px;
+  padding:  0 6px;
 }
 
-.nav {
-  display: inline-block;
+.search-box:hover > .search-btn{
+  background: white;
 }
 
-
-
-/* Extra
-header,
-section:nth-of-type(odd),
-footer {
-  background: var(--primary);
-  color: var(--primary-text);
-} */
-
-nav {
-  background-color: #c8ccc1;
-  color: #178c7e;
-  min-height: 72px;
+.search-btn{
+  Color: #FFFFF;
+  Float: right;
+  Width: 40px;
+  Height: 40px;
+  Border-radius: 50%;
+  Display: flex;
+  Justify-content: center;
+  Align-items: center;
 }
 
-h1 {
-  color: #ffffff;
-  text-align: center;
-  font-family: 'Montserrat Alternates', sans-serif;
-  margin-top: 15px;
-  align-self: center;
-
-}
-
-h2 {
-  background-color: #178c7e;
-  color: #c8ccc1;
-  text-align: center;
-}
-
-.firstParagraph {
-  background-color: var(#ffffff);
-  color: #178c7e;
-}
-
-.secondParagraph {
-  background-color: var(--second-color);
-  color: var(--first-color);
-}
-
-.container {
-  --first-color: #48ff32;
-}
-
-.thirdParagraph {
-  background-color: var(--first-color);
-  color: var(--second-color);
-}
-
-
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-/*Layout*/
-
-header {
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-}
-
-figure,
-h1 {
-  margin: 0;
-}
-
-figure,
-h2 {
-  margin: 0;
-}
-
-img {
-  border-radius: 50%;
-  margin-top: 15px;
-  margin-bottom: 15px;
-  box-shadow: 3px 10px 10px black;
-}
-
-nav ul {
-  list-style-type: none;
-  text-align: center;
-}
-
-/* Remove underlines */
-footer a,
-nav a,
-.hero a,
-.read-more-btn {
-  text-decoration: none;
-}
-
-section {
-  padding: var(--base-spacing);
-  display: flex;
-  flex-direction: column;
-}
-
-/* Create clickable button */
-.hero a {
-  background-color: var(--second-color);
-  padding: var(--base-spacing);
-  border-radius: var(--base-spacing);
-}
-
-/* Hover for CTA button
-.hero a:hover {
-  background: var(--first-color);
-} */
-
-nav li {
-  padding: var(--base-spacing) 0;
-}
-
-ul {
-  padding: 0;
-}
-
-nav a:hover {
-  background: var(--first-color);
-}
-
-section p {
-  margin-bottom: auto;
-}
-
-.read-more-btn {
-  background: gray;
-  padding: var(--base-spacing);
-  border-radius: var(--base-spacing);
-  margin: var(--base-spacing) 0;
-  display: inline-block;
-  max-width: 120px;
-  align-self: center;
-}
-.hero {
-  height: 50vh;
-}
-
-.is-hidden--mobile {
-  height: 0;
-  font-size: 0;
-}
-
-/* Form */
-form,
-form div {
-  display: flex;
-  flex-direction: column;
-}
-
-form {
-  padding: var(--base-spacing);
-}
-
-input,
-textarea {
-  border: solid thin pink;
-  max-width: 80vw;
-}
-
-form div {
-  margin: var(--base-spacing);
-  display: flex;
-  flex-direction: column;
-}
-
-input[type="submit"] {
-  display: inline-block;
-  min-height: calc(var(--base-spacing)) * 12;
-  text-align: center;
-  border-radius: var(--base-spacing);
-  margin: var(--base-spacing);
-  fill: grey;
-}
-
-/* Tablet */
-@media screen and (min-width: 768px) {
-  section {
-    display: flex;
-    flex-direction: column;
-  }
-  .read-more-btn {
-    max-width: calc(var(--base-spacing)) * 15;
-    text-align: center;
-  }
-  .is-hidden--tablet {
-    height: 0;
-    font-size: 0;
-  }
-}
-
-/* Desktop */
-@media screen and (min-width: 960px) {
-  header {
-    flex-direction: row;
-    padding: calc(var(--base-spacing)) * 3;
-  }
-  header figure {
-    margin-right: calc(var(--base-spacing)) * 3;
-  }
-  nav ul {
-    display: flex;
-    justify-content: space-around;
-    text-align: center;
-  }
-  .is-hidden--desktop {
-    height: 0;
-    font-size: 0;
-  }
-  .is-shown--desktop {
-    font-size: initial;
-  }
-  .flex-container--desktop {
-    display: flex;
-  }
-  .flex-row--desktop {
-    flex-direction: row;
-  }
-}
-
-footer {
-  color: #FFFFFF;
-  font-family: 'Montserrat Alternates', sans-serif;
+.search-txt{
+  Border: none;
+  Background: none;
+  Outline: none;
+  Float: left;
+  Padding: 0;
+  Color: white;
+  Font-size: 16px;
+  Transition: 0.4s;
+  Line-height: 40px;
+  Width: 0px
 }

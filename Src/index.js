@@ -1,4 +1,4 @@
-function clickHandler(element) {
+/* function clickHandler(element) {
   document.querySelectorAll('.content').forEach(function(page) {
     page.style.display = 'none';
   });
@@ -22,3 +22,4 @@ buttonChat.addEventListener('click', function(event) {
   clickHandler('div#Chat');
 })
 
+*/
